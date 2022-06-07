@@ -8,11 +8,13 @@
 * __Telegram:__ @areliy
 * **Discord:** Areliya (@Areliya13)
 * [LinkedIn](https://www.linkedin.com/in/tamara-sharipova-525273234/ "LinkedIn")
-
+===
 ### Briefly about myself:
 
 Having started working as a software support for universities. Continued my career as an employee of the implementation and support of 1c software products (1C:Accounting department 8, 1C:Salary and personnel management 8, 1C:Trade Management 8).
+
 Now working in a contractor company with large banks: create and edite sql-requests for generating reports. I also have the skill of working with SAP Information Design Tool and developed some reports and its mailing.
+
 At the moment I am studying for a frontend developer at RSSchool.
 ---
 ### Skills and Proficiency:
