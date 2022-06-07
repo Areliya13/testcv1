@@ -1,9 +1,7 @@
 # Tamara Sharipova
 ## Junior Frontend Developer
 ![photo](https://media-exp1.licdn.com/dms/image/C4E03AQFyOXMAJGsxAg/profile-displayphoto-shrink_400_400/0/1646927283420?e=1660176000&v=beta&t=BZG61zC063Ov5k8v0-3Qq9BCtZyuxyG3Ysm3cg8lR5E "Photo")
----
 ### Contact information:
-
 **Phone:** +7(926)42-87-599
 **E-mail:** sharipovatamara@gmail.com
 **Telegram:** @areliy
