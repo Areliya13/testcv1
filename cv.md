@@ -45,4 +45,4 @@ function multiply(a, b){
 ---
 ### Projects:
 #### CV
-[CV](https://github.com/Areliya13/testcv1 "cv project")
+[CV project](https://github.com/Areliya13/testcv1 "cv project")
