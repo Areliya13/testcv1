@@ -1,0 +1,127 @@
+/*--  General --*/
+@font-face {
+    font-family: 'Magra';
+    src: url("assets/fonts/Magra-Bold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url("assets/fonts/RedHatText-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Aleo';
+    src: url("assets/fonts/Aleo-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Aleo';
+    src: url("assets/fonts/Aleo-Bold.ttf");
+    font-weight: 700;
+}
+html {
+    scroll-behavior: smooth; 
+    background: #E5E5E5;
+}
+* {
+    box-sizing: border-box;    
+}
+body {
+    font-family: 'Aleo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #0D606F;
+    background: #E5E5E5;
+}
+.body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/*--  Header --*/
+.header {
+    background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplashBig.png');
+    background-repeat: no-repeat;
+    background-position: center 0; 
+}
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);   
+    height: 90px;
+}
+.logo{
+    font-family: 'Magra';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    padding: 0 0 0 120px;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-link{
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.nav-link:hover{
+    background: #0b4a2b;
+    color: #ecf4ca;
+    transition: .3s;
+}
+.login{
+    background: #0D606F;
+    width: 103px;
+    height: 41px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 120px 0 0;
+}
+.login-font{
+    color: white;
+}
+/*--  Main --*/
+.main {
+    background-color: #E5E5E5;
+}
+.first-section {
+    background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplashBig.png');
+    background-repeat: no-repeat;
+    background-position: center -90px;
+}
+/*--  Footer --*/
+.footer {
+    background-color: #829985;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
