@@ -5,165 +5,301 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/img/Vector.ico"> 
 </head>
-<body>
+<body class="body">
+    <script src="index.js"></script>
     <div class="wallpaper-begin">
-        <header class="header">
-            <div class="container header-container">
-                <div class="logo">
-                    <img src="./assets/img/Icon.svg" alt="logo">
-                    Travel Portal
+        <div class="gradient">
+            <header class="header">
+                <div class="container header-container">
+                    <div class="header-content header-content-size">
+                        <div class="logo" id="logo">
+                            <img src="./assets/img/Icon.svg" alt="logo">
+                            <span class="logo-name hide-mini hide-small show-great">Travel Portal</span>
+                        </div>
+                        <nav class="nav hide-mini">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <div class="item">
+                                        <a href="#preview" class="nav-link nav-link-size">How It Works</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="item">
+                                        <a href="#steps" class="nav-link nav-link-size">Plan Your Trip</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="item">
+                                        <a href="#destinations" class="nav-link nav-link-size">Destinations</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="item">
+                                        <a href="#stories2" class="nav-link nav-link-size">Travel Stories</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="button button-login hide-mini">Login</button>
+                        <div class="hide-small">
+                            <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                                <img src="./assets/img/eva_menu-outline.svg" alt="menu" class="burger-menu hide-small">
+                            </span>
+                            <div id="mySidenav" class="sidenav">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                    <img src="./assets/img/Close.svg" alt="close" class="close-button">
+                                </a>
+                                <span class="menu-nav">
+                                    <a href="#preview" onclick="closeNav()">How It Works</a>
+                                    <a href="#steps" onclick="closeNav()">Plan Your Trip</a>
+                                    <a href="#destinations" onclick="closeNav()">Destinations</a>
+                                    <a href="#stories2" onclick="closeNav()">Travel Stories</a>
+                                    <a href="#" onclick="closeNav()">Account</a>
+                                    <a href="#socmedia" onclick="closeNav()">Social Media</a>
+                                </span>
+                            </div>
+                            
+                            <script>
+                            function openNav() {
+                            document.getElementById("mySidenav").style.height = "230px";
+                            }
+                            
+                            function closeNav() {
+                            document.getElementById("mySidenav").style.height = "0";
+                            }
+                            </script>
+                        </div>
+                    </div>
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#preview" class="nav-link">How It Works</a></li>
-                        <li class="nav-item"><a href="#steps" class="nav-link">Plan Your Trip</a></li>
-                        <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
-                        <li class="nav-item"><a href="#stories2" class="nav-link">Travel Stories</a></li>
-                    </ul>
-                </nav>
-                <button class="button button_login">Login</button>
-            </div>
-        </header>    
-        <div class="container">
-            <section class="section first-section" id="preview">
-                <div class="section profile">
-                    <h1>Explore the beauty of the World</h1>
-                    <p class="description">Receive personalized recommendations for countries, hotels, activities and more</p>
-                    <form class="form">
-                        <input type="text" class="input" placeholder="What would you like to do?">
-                        <button class="button plan">Start Planning</button>
-                    </form>
+            </header>    
+            <section class="section" id="preview">
+                <div class="container">
+                    <div class="profile">
+                        <h1 class="show-medium hide-mini hide-small">Explore the beauty of the World</h1>
+                        <p class="show-medium description hide-mini hide-small">Receive personalized recommendations for countries, hotels, activities and more</p>
+                        <form class="form form-size">
+                            <input type="text" class="input input-size" placeholder="What would you like to do?">
+                            <button class="button plan button-size">Start Planning</button>
+                        </form>
+                    </div>
                 </div>
-            </section>     
-        </div>
+            </section>   
+        </div>  
     </div>
     <main class="main">
-        <div class="container">
-            <section class="section" id="steps">
-                <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
-                <div class="steps">
-                    <div class="step">
-                        <img src="./assets/img/Frame28.svg" alt="bicycle">
-                        <p class="step-text">Tell us what you want to do</p>
+        <section class="section" id="steps">
+            <div class="container">
+                <div class="three-steps">
+                    <h2 class="section-title">3 STEPS TO THE PERFECT TRIP</h2>
+                    <div class="steps steps-size">
+                        <div class="step">
+                            <img src="./assets/img/Frame28.svg" alt="bicycle" class="img-size">
+                            <p class="step-text hide-mini hide-small show-medium">Tell us what you want to do</p>
+                        </div>
+                        <div class="step middle-step">
+                            <img src="./assets/img/Frame11.svg" alt="calendar" class="img-size">
+                            <p class="step-text hide-mini hide-small show-medium">Share us preferable dates</p>
+                        </div>
+                        <div class="step">
+                            <img src="./assets/img/Frame12.svg" alt="plane" class="img-size">
+                            <p class="step-text hide-mini hide-small show-medium">We will give you recommendations</p>
+                        </div>
                     </div>
-                    <div class="step middle-step">
-                        <img src="./assets/img/Frame11.svg" alt="calendar">
-                        <p class="step-text">Share us preferable dates</p>
-                    </div>
-                    <div class="step">
-                        <img src="./assets/img/Frame12.svg" alt="plane">
-                        <p class="step-text">We will give you recommendations</p>
+                    <div class="steps steps-size">
+                        <p class="step-text-small hide-medium hide-big hide-great">Tell us what you want to do</p>
+                        <p class="step-text-small hide-medium hide-big hide-great center">Share us preferable dates</p>
+                        <p class="step-text-small hide-medium hide-big hide-great right">We will give you recommendations</p>
                     </div>
                 </div>
-            </section>
-            <section class="section" id="destinations">
+            </div>
+        </section>
+        <section class="section destinations" id="destinations">
+            <div class="container">
                 <h2 class="section-title">POPULAR DESTINATIONS</h2>
-                <div class="scroll">
-                    <div class="dest">
-                        <img class="destImg" src="./assets/img/Rectangle23.jpg" alt="SPAIN">
+                <div class="scroll-big hide-mini show-small">
+                    <div class="dest dest-size">
+                        <img class="destImg dest-img  dest-img2" src="./assets/img/Rectangle23.jpg" alt="SPAIN">
                         <span class="imgText">SPAIN</span>
                     </div>
-                    <div class="dest">
-                        <img class="destImg" src="./assets/img/Rectangle24.jpg" alt="JAPAN">
+                    <div class="dest dest-size">
+                        <img class="destImg dest-img  dest-img2" src="./assets/img/Rectangle24.jpg" alt="JAPAN">
                         <span class="imgText">JAPAN</span>
                     </div>
-                    <div class="dest">
-                        <img class="destImg" src="./assets/img/Rectangle25.jpg" alt="USA">
+                    <div class="dest dest-size">
+                        <img class="destImg dest-img  dest-img2" src="./assets/img/Rectangle25.jpg" alt="USA">
                         <span class="imgText">USA</span>
                     </div>
                 </div>
-                <div class="scroller">
+                <div class="dest adjust hide-small">
+                    <div class="scroll-small hide-small">
+                        <div class="dest2">
+                            <img class="destImg" src="./assets/img/Rectangle26.jpg" alt="SPAIN">
+                            <span class="imgText">SPAIN</span>
+                        </div>
+                        <div class="dest2">
+                            <img class="destImg" src="./assets/img/Rectangle34.jpg" alt="JAPAN">
+                            <span class="imgText">JAPAN</span>
+                        </div>
+                        <div class="dest2">
+                            <img class="destImg" src="./assets/img/Rectangle35.jpg" alt="USA">
+                            <span class="imgText">USA</span>
+                        </div>
+                    </div>
+                    <div class="scroller-small hide-small">
+                        <div class="dot specialDot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="left-arrow">
+                        <img src="./assets/img/ep_arrow-up-bold.svg" alt="arrow">
+                    </div>
+                    <div class="right-arrow">
+                        <img src="./assets/img/ep_arrow-up-bold(1).svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="scroller-big hide-mini show-small">
                     <div class="dot"></div>
                     <div class="dot specialDot"></div>
                     <div class="dot"></div>
                 </div>
                 <div class="centerPos">
-                    <button class="button"><img src="./assets/img/bi_arrow-right.svg" alt=""><span class="space">Find More</span></button>
+                    <button class="button button-size">
+                        <img src="./assets/img/bi_arrow-right.svg" alt="arrow" class="hide-mini hide-small show-medium">
+                        <img src="./assets/img/bi_arrow-right-small.svg" alt="arrow" class="show-mini show-small hide-medium">
+                        <span class="space">Find More</span>
+                    </button>
                 </div>
-            </section> 
-            <h2 class="section-title travel" id="stories2">TRAVEL STORIES</h2>
-        </div>
+            </div>
+        </section> 
+                <h2 class="section-title travel" id="stories2">TRAVEL STORIES</h2>
     </main>
     <div class="wallpaper-end">
-        <div class="about">
-            <div class="container">
-                <section class="section" id="stories">
-                    <div class="story first-story">
-                        <img class="storyImg" src="./assets/img/Rectangle29.jpg" alt="boatInTheRocks">
-                        <div class="desc">
+        <section class="section" id="stories">
+            <div class="about">
+                <div class="container">
+                    <div class="story first-story story-size">
+                        <div class="img-cont">
+                            <img class="storyImg hide-mini hide-small show-medium" src="./assets/img/Rectangle29.jpg" alt="boatInTheRocks">
+                            <img class="storyImg hide-medium hide-big hide-great" src="./assets/img/Rectangle15.jpg" alt="boatInTheRocks">
+                        </div>
+                        <div class="desc desc-size">
                             <h3>10 Photos of Attractive Thailand</h3>
-                            <p class="storyText" lang="zxx">                            
+                            <p class="storyText storyText-size hide-mini hide-small hide-medium show-big" lang="zxx">                            
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-                                <a href="#preview" class="read-more">Read More</a>
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
+                            </p>
+                            <p class="storyText storyText-size hide-big hide-great" lang="zxx">                            
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... 
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
                             </p>
                         </div>
                     </div>
-                    <div class="story">
-                        <img class="storyImg" src="./assets/img/Rectangle30.jpg" alt="roadAtGreadCanyon">
-                        <div class="desc">
+                    <div class="story story-size">
+                        <div class="img-cont">
+                            <img class="storyImg hide-mini hide-small show-medium" src="./assets/img/Rectangle30.jpg" alt="roadAtGreadCanyon">
+                            <img class="storyImg hide-medium hide-big hide-great" src="./assets/img/Rectangle16.jpg" alt="roadAtGreadCanyon">
+                        </div>
+                        <div class="desc desc-size">
                             <h3>Canyonlands National Park, Utah</h3>
-                            <p class="storyText" lang="zxx">                            
+                            <p class="storyText storyText-size hide-mini hide-small hide-medium show-big" lang="zxx">                            
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-                                <a href="#preview" class="read-more">Read More</a>
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
+                            </p>
+                            <p class="storyText storyText-size hide-big hide-great" lang="zxx">                            
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... 
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
                             </p>
                         </div>
                     </div>
-                    <div class="story">
-                        <img class="storyImg" src="./assets/img/Rectangle31.jpg" alt="mountainsInSnow">
-                        <div class="desc">
+                    <div class="story story-size">
+                        <div class="img-cont">
+                            <img class="storyImg hide-mini hide-small show-medium" src="./assets/img/Rectangle31.jpg" alt="mountainsInSnow">
+                            <img class="storyImg hide-medium hide-big hide-great" src="./assets/img/Rectangle27.jpg" alt="mountainsInSnow">
+                        </div>
+                        <div class="desc desc-size">
                             <h3>I left my heart in the Mountains!</h3>
-                            <p class="storyText" lang="zxx">                            
+                            <p class="storyText storyText-size hide-mini hide-small hide-medium show-big" lang="zxx">                            
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-                                <a href="#preview" class="read-more">Read More</a>
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
+                            </p>
+                            <p class="storyText storyText-size hide-big hide-great" lang="zxx">                            
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... 
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
                             </p>
                         </div>
                     </div>
-                    <div class="story last-story">
-                        <img class="storyImg" src="./assets/img/Rectangle32.jpg" alt="busOnTheRoad">
-                        <div class="desc">
+                    <div class="story last-story story-size">
+                        <div class="img-cont">
+                            <img class="storyImg hide-mini hide-small show-medium" src="./assets/img/Rectangle32.jpg" alt="busOnTheRoad">
+                            <img class="storyImg hide-medium hide-big hide-great" src="./assets/img/Rectangle17.jpg" alt="busOnTheRoad">
+                        </div>
+                        <div class="desc desc-size">
                             <h3>The Longest journey in my life!</h3>
-                            <p class="storyText" lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            <p class="storyText storyText-size hide-mini hide-small hide-medium show-big" lang="zxx">                            
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-                                <a href="#preview" class="read-more">Read More</a>
-                            </p>                        
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
+                            </p>
+                            <p class="storyText storyText-size hide-big hide-great" lang="zxx">                            
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... 
+                                <a href="#preview" class="read-more read-more-size">Read More</a>
+                            </p>
                         </div>
                     </div>
                     <div class="centerPos">
-                        <button class="button button-space"><img src="./assets/img/bi_arrow-right.svg" alt=""><span class="space">See More</span></button>
+                        <button class="button button-space button-size">
+                            <img src="./assets/img/bi_arrow-right.svg" alt="arrow" class="hide-mini hide-small show-medium">
+                            <img src="./assets/img/bi_arrow-right-small.svg" alt="arrow" class="show-mini show-small hide-medium">
+                            <span class="space">See More</span>
+                        </button>
                     </div>
-                </section>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="container footer-container">
-                <div class="rsschool">
-                    <div class="link-img"><a href="https://github.com/Areliya13"><img class="rss" src="./assets/img/Octocat.svg" alt="GitHub"></a></div>
-                    <div class="link-img"><a href="https://rs.school/js/"><img class="rss" src="./assets/img/rs_school_js.svg" alt="RSSchool"></a></div>
                 </div>
-                <div class="rights">All Rights Reserved © Travel Portal</div>            
-                <ul class="socnet">
-                    <li><a href=""><img class="soc-item" src="./assets/img/akar-icons_instagram-fill.svg" alt="instagram"></a></li>
-                    <li><a href=""><img class="soc-item" src="./assets/img/akar-icons_video.svg" alt="youtube"></a></li>
-                    <li><a href=""><img class="soc-item" src="./assets/img/akar-icons_twitter-fill.svg" alt="twitter"></a></li>
-                </ul>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="rsschool">
+                        <div class="link-img"><a href="https://github.com/Areliya13" target="_blank"><img class="rss" src="./assets/img/Octocat.svg" alt="GitHub"></a></div>
+                        <div class="link-img hide-mini hide-small show-medium"><a href="https://rs.school/js/" target="_blank"><img class="rss" src="./assets/img/rs_school_js.svg" alt="RSSchool"></a></div>
+                    </div>
+                    <div class="rights hide-mini hide-small show-medium">All Rights Reserved © Travel Portal</div>            
+                    <ul class="socnet" id="socmedia">
+                        <li><a href="https://www.instagram.com/rsschool_news/" target="_blank"><img class="soc-item" src="./assets/img/akar-icons_instagram-fill.svg" alt="instagram"></a></li>
+                        <li><a href="https://www.youtube.com/c/RollingScopesSchool" target="_blank"><img class="soc-item" src="./assets/img/akar-icons_video.svg" alt="youtube"></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><img class="soc-item" src="./assets/img/akar-icons_twitter-fill.svg" alt="twitter"></a></li>
+                    </ul>
+                    <div class="rsschool hide-medium hide-big hide-great">
+                        <div class="link-img"><a href="https://rs.school/js/" target="_blank"><img class="rss" src="./assets/img/rsschool_small.svg" alt="RSSchool"></a></div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

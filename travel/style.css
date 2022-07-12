@@ -1,37 +1,26 @@
 /*--  General --*/
-@font-face {
+@font-face{
     font-family: 'Magra';
     src: url("assets/fonts/Magra-Bold.ttf");
     font-weight: 600;
 }
-@font-face {
+@font-face{
     font-family: 'Red Hat Text';
     src: url("assets/fonts/RedHatText-Medium.ttf");
     font-weight: 500;
 }
-@font-face {
+@font-face{
     font-family: 'Aleo';
     src: url("assets/fonts/Aleo-Regular.ttf");
     font-weight: 400;
 }
-@font-face {
+@font-face{
     font-family: 'Aleo';
     src: url("assets/fonts/Aleo-Bold.ttf");
     font-weight: 700;
 }
-html {
+html{
     scroll-behavior: smooth; 
-}
-* {
-    box-sizing: border-box;    
-}
-body {
-    font-family: 'Aleo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #0D606F;
 }
 h1{
     font-family: 'Aleo';
@@ -43,30 +32,25 @@ h1{
 
     color: #FFFFFF;
 
-    -webkit-text-stroke: 1px black;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
-h2 {
+h2{
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
     text-align: center;
-    line-height: 53px;
     color: #F2785C;
     margin: 0;
 }
-h3 {    
-    font-family: 'Aleo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
-    color: #0D606F;
+ul{
+    padding: 0;
+}
+p{
     margin: 0;
 }
-.body {
+.body{
     min-height: 100vh;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -85,34 +69,22 @@ h3 {
     align-items: center;
     font-family: 'Red Hat Text';
     font-weight: 500;
-    font-size: 24px;
     color: white;
     border: none;
-    width: 228px;
-    height: 59px;
 }
 .button:hover{
     background: #17acc7;
     transition: 0.5s;
+    cursor: pointer;
 }
 /*--  Header --*/
-.wallpaper-begin{
-    background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
-    background-repeat: no-repeat;
-    background-position: center 0; 
-    height: 765px;
-}
-.header {
-    background-color: rgba(242, 120, 92, 0.7);
-    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-}
-.header-container{
+.header-content{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
-    height: 90px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo{
     font-family: 'Magra';
@@ -120,25 +92,20 @@ h3 {
     font-size: 32px;
     line-height: 39px;
     color: #FFFFFF;
-    margin-left: 120px;
+
+    display: flex;
 }
-.nav{
-    padding-right: 25px;
-}
-.nav-list {
+.nav-list{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 .nav-link{
-    margin-right: 42px;
     text-decoration: none;
     font-size: medium;
     font-family: 'Red Hat Text';
     font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
     color: #FFFFFF;
 }
 .nav-link:hover{
@@ -146,75 +113,30 @@ h3 {
     text-shadow:  0px 4px 4px rgba(13, 96, 111, 0.5);
     transition: 0.5s;
 }
-.button_login{
-    width: 103px;
-    height: 41px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-    font-size: 16px;
-    margin-right: 120px;
-}
 /*--  Main --*/
-#steps{
-    padding-top: 80px;
-}
-.profile{
-    width: 892px;
-    height: 422px;
-    margin-left: 120px;
-    margin-top: 32px;
-}
-.description {
-    font-family: 'Aleo';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin-top: 35px;
-    margin-bottom: 46px;
-}
 .form{    
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 2px;    
-    width: 892px;
-    height: 95px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
 }
-.input {        
+.input{        
     outline: none;  
     border: none;  
     flex-grow: 1;
     height: 30px;
     background: rgba(255, 255, 255, 0);
-    margin-left: 31px;
-}
-::placeholder {
-    font-family: 'Aleo';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-
-    color: #F2785C;
-}
-.plan{
-    margin-right: 18px;
 }
 .steps{
     display: flex;
     justify-content: space-between;
-    padding: 40px 130px 5px 130px;
-    
+    padding-top: 40px;
+    padding-bottom: 5px;    
 }
 .step{
     text-align: center;
-}
-.middle-step{
-    padding-left: 67px;
 }
 .step-text{
     font-family: 'Aleo';
@@ -223,73 +145,22 @@ h3 {
     font-size: 20px;
     line-height: 24px;
     color: #0D606F;
-}
-#destinations{
-    padding-top: 75px;
-}
-.scroll{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    padding-top: 46px;
+    margin-top: 30px;
 }
 .dest{
     position: relative;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 .destImg{
     border-radius: 16px;
-}
-.imgText{
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    color: #FFFFFF;
-    position: absolute;
-    bottom: 45px;
-    left: 15px;
-}
-.scroller{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-.dot{
-    width: 20px;
-    height: 20px;
-    background: rgba(242, 120, 92, 0.5);
-    border-radius: 10px;
-    margin: 0 5px;
-}
-.specialDot{
-    background: #F2785C;
 }
 .centerPos{
     display: flex;
     justify-content: center;
 }
-.button-space{
-    margin-bottom: 40px;
-}
 .space{
     margin-left: 10px;
 }
 /*--  Footer --*/
-.wallpaper-end{
-    background-image: url(./assets/img/Rectangle33.jpg);
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;
-}
 .rsschool{
     display: flex;
     justify-content: center;
@@ -297,57 +168,55 @@ h3 {
 .about{
     background: rgba(255, 255, 255, 0.7);
 }
-.travel{
-    margin-top: 80px;
-    margin-bottom: 40px;
-}
 .story{
     display: flex;
     justify-content: space-between;
-
-    padding: 15px 120px;
-}
-.first-story{
-    padding-top: 40px;
-}
-.last-story{
-    padding-bottom: 40px;
 }
 .storyImg{
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
+    
+    width: 100%;
 }
 .desc{
-    margin-left: 40px;
+    margin-left: 10px;
 }
 .storyText{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+
+    color: #0D606F;
     margin-bottom: 0;
+}
+.center{
+    text-align: center;
+    width: 111px;
+}
+.right{
+    text-align: right;
 }
 .read-more{
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
     text-decoration-line: underline;
-
+    
     color: #0D606F;
-
+    
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .read-more:hover{
     color: #F2785C;
     transition: 0.5s;
 }
-.link-img{
-    height: 50px;
-}
-.rss{
-    height: 36px;
-}
-.rss:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .rights{
     font-family: 'Red Hat Text';
@@ -355,6 +224,7 @@ h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
+    text-align: center;
 
     color: #FFFFFF;
 }
@@ -371,8 +241,853 @@ h3 {
     transform: scale(1.1);
     transition: 0.5s;
 }
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
+/*Adaptive*/
+@media only screen and (max-width: 391px){
+    .hide-mini{
+        display: none;
+    }    
+    .show-mini{
+        display: inherit;
+    }
+    .wallpaper-begin{
+        background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash2.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0; 
+        height: 251px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .gradient{
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+        height: 100%;
+    }
+    .header-content-size{
+        width: 91.8%;
+        height: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 43px;
+    }
+    .burger-menu{
+        display: inherit;
+    }
+    .profile{
+        width: 98%;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-size{
+        width: 93.5%;
+        height: 48px;
+        margin-top: 67px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-size{
+        margin-left: 10px;
+    }
+    ::placeholder{
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+                
+        color: #F2785C;
+    }
+    .plan{
+        margin-right: 10px;
+    }
+    .button-size{
+        width: 92px;
+        height: 30px;
+        
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .three-steps{    
+        width: 92.3%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-title{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .steps-size{
+        padding: 0;
+        margin-top: 18px;
+    }
+    .img-size{
+        width: 70px;
+    }
+    .step-text-small{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        color: #0D606F;
+        font-size: 10px;
+        line-height: 12px;
+        height: 24px;
+        width: 90px;
+    }
+    .middle-step{
+        padding-left: 0;
+    }
+    .destinations{
+        padding: 0;
+    }
+    .adjust{
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+    .scroll-small{
+        display: flex;
+        justify-content: left;
+        overflow: hidden;
+    }
+    .dest2{
+        position: relative;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .imgText{
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 8px;
+        left: 15px;
+    }
+    .scroller-small{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 12px;
+        left: calc((100% - 42px)/2);
+    }
+    .dot{
+        width: 8px;
+        height: 8px;
+        background: rgba(242, 120, 92, 0.5);
+        border-radius: 4px;
+        margin: 0 3px;
+    }
+    .left-arrow{
+        position: absolute;
+        top: calc((100% - 30px)/2);
+        left: 20px;
+    }
+    .right-arrow{
+        position: absolute;
+        top: calc((100% - 30px)/2);
+        right: 20px;
+    }
+    .travel{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .wallpaper-end{
+        background-image: url(./assets/img/Rectangle28.jpg);
+        background-repeat: no-repeat;
+        background-position: center 0;
+    }
+    .story-size{
+        padding-top: 10px;
+        padding-bottom: 4px;
+        width: 92.3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-cont{
+        width: 43.5%;
+    }
+    .desc-size{
+        width: 56.5%;
+    }
+    .first-story{
+        padding-top: 10px;
+        margin-top: 0;
+    }
+    h3{    
+        font-family: 'Aleo';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 700;
+        color: #0D606F;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .storyText-size{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .read-more-size{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .button-space{
+        margin-bottom: 13px;
+    }
+    .rss{
+        height: 33px;
+    }
+    .link-img{
+        height: 33px;
     }
 }
+
+/* Small devices (portrait tablets and large phones, 391px and up) */
+@media only screen and (min-width: 391px){
+    .hide-small{
+        display: none;
+    }
+    .show-small{
+        display: inherit;
+    }
+    .wallpaper-begin{
+        background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0; 
+        height: 300px;
+    }
+    .header-container{
+        background-color: rgba(242, 120, 92, 0.7);
+        box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+        display: flex;
+        justify-content: center;
+        
+        height: 90px;
+        width: 100%;
+    }
+    .header-content-size{
+        width: 95%;
+        height: 100%;
+    }
+    .nav{
+        width: 65%;
+    }
+    .item{
+        margin: 0 5px;
+    }
+    .nav-link-size{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .button-login{
+        width: 85px;
+        height: 30px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        font-size: 11px;
+    }
+    .profile{
+        width: 98%;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-size{
+        width: 93.5%;
+        height: 48px;
+        margin-top: 67px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-size{
+        margin-left: 10px;
+    }
+    ::placeholder{
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+                
+        color: #F2785C;
+    }
+    .plan{
+        margin-right: 10px;
+    }
+    .button-size{
+        width: 92px;
+        height: 30px;
+        
+        box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .three-steps{    
+        width: 92.3%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .section-title{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .steps-size{
+        padding: 0;
+        margin-top: 20px;
+    }
+    .img-size{
+        width: 70px;
+    }
+    .step-text-small{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        color: #0D606F;
+        font-size: 11px;
+        line-height: 13px;
+        height: 24px;
+        width: 90px;
+    }
+    .middle-step{
+        padding-left: 0;
+    }
+    .destinations{
+        padding: 0;
+    }
+    .scroll-big{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding-top: 20px;
+    }
+    .dest-img{
+        width: 350px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .imgText{
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 15px;
+        bottom: 25px;
+    }
+    .scroller-big{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .dot{
+        width: 20px;
+        height: 20px;
+        background: rgba(242, 120, 92, 0.5);
+        border-radius: 10px;
+        margin: 0 5px;
+    }
+    .travel{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .wallpaper-end{
+        background-image: url(./assets/img/Rectangle33.jpg);
+        background-repeat: no-repeat;
+        background-position: center 0;
+    }
+    .first-story{
+        padding-top: 10px;
+        margin-top: 0;
+    }
+    .story-size{
+        padding-top: 15px;
+        width: 92.3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-cont{
+        width: 47.5%;
+    }
+    .last-story{
+        padding-bottom: 10px;
+    } 
+    h3{    
+        font-family: 'Aleo';
+        font-style: normal;
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 700;
+        color: #0D606F;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .storyText-size{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .read-more-size{
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .desc-size{
+        width: 63.5%;
+    }
+    .button-space{
+        margin-bottom: 13px;
+    }
+    .rss{
+        height: 33px;
+    }
+    .link-img{
+        height: 33px;
+    }
+}
+
+/* Medium devices (landscape tablets, 600px and up) */
+@media only screen and (min-width: 600px){
+    .hide-medium{
+        display: none;
+    }
+    .show-medium{
+        display: inherit;
+    }
+    .wallpaper-begin{
+        background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0; 
+        height: 765px;
+    }
+    .header-container{
+        background-color: rgba(242, 120, 92, 0.7);
+        box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+        display: flex;
+        justify-content: center;
+        
+        height: 90px;
+        width: 100%;
+    }
+    .header-content-size{
+        width: 98%;
+        height: 100%;
+    }
+    .nav{
+        width: 75%;
+    }
+    .nav-link-size{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .button-login{
+        width: 103px;
+        height: 41px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        font-size: 16px;
+    }
+    .profile{
+        width: 97%;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description{
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-top: 35px;
+        margin-bottom: 46px;
+    }
+    .form-size{
+        margin-top: 42px;
+        padding: 2px;    
+        width: 100%;
+        height: 95px;
+    }
+    .input-size{
+        margin-left: 20px;
+    }
+    ::placeholder{
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        
+        color: #F2785C;
+    }
+    .plan{
+        margin-right: 18px;
+    }
+    .button-size{
+        width: 228px;
+        height: 59px;
+        
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .three-steps{    
+        width: 81.7%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+    .section-title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .steps-size{
+        padding: 0;
+        margin-top: 40px;
+    }
+    .destinations{
+        padding-top: 35px;
+    }
+    .scroll-big{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+    .dest-size{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .dest-img{
+        width: 500px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .imgText{
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 42px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 15px;
+        bottom: 40px;
+    }
+    .scroller-big{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .travel{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .button-space{
+        margin-bottom: 40px;
+    }
+    .read-more-size{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .link-img{
+        height: 50px;
+    }
+    .rss{
+        height: 36px;
+    }
+    .story-size{
+        padding-top: 5px;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-cont{
+        width: 33.3%;
+    }
+    .last-story{
+        padding-bottom: 10px;
+    } 
+    h3{    
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 30px;
+        color: #0D606F;
+        margin: 0;
+    }
+    .storyText-size{
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .desc-size{
+        width: 63.5%;
+    }
+}
+/* Large devices (laptops/desktops, 800px and up) */
+@media only screen and (min-width: 800px){   
+    .hide-big{
+        display: none;
+    } 
+    .show-big{
+        display: inherit;
+    }
+    .wallpaper-begin{
+        background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0; 
+        height: 765px;
+    }    
+    .header-container{
+        background-color: rgba(242, 120, 92, 0.7);
+        box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+        display: flex;
+        justify-content: center;
+        
+        height: 90px;
+        width: 100%;
+    }
+    .header-content-size{
+        width: 98%;
+        height: 100%;
+    }
+    .nav{
+        width: 55%;
+        margin-right: 70px;
+    }
+    .nav-link-size{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .profile{
+        width: 90%;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-size{
+        margin-left: 31px;
+    }
+    .button-size{
+        width: 228px;
+        height: 59px;
+        
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .section-title{
+        font-size: 40px;
+        line-height: 53px;
+    }
+    .middle-step{
+        padding-left: 67px;
+    }
+    .scroll-big{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding-top: 46px;
+    }
+    .img-size{
+        width: 100px;
+    }
+    .scroller-big{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .dest-img2{
+        width: 800px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dest-size{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .story-size{
+        padding-top: 14px;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .button-space{
+        margin-bottom: 40px;
+    }
+    .read-more-size{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .link-img{
+        height: 50px;
+    }
+    .rss{
+        height: 36px;
+    }
+    .last-story{
+        padding-bottom: 40px;
+    }    
+    h3{    
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 42px;
+        color: #0D606F;
+        margin: 0;
+    }
+    .storyText-size{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .desc-size{
+        width: 63.5%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+    .hide-great{
+        display: none;
+    }
+    .show-great{
+        display: inherit;
+    }
+    .wallpaper-begin{
+        background-image: url('./assets/img/garrett-parker-DlkF4-dbCOU-unsplash1.jpg');
+        background-repeat: no-repeat;
+        background-position: center 0; 
+        height: 765px;
+    }
+    .header-container{
+        background-color: rgba(242, 120, 92, 0.7);
+        box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+        display: flex;
+        justify-content: center;
+        
+        height: 90px;
+        width: 100%;
+    }
+    .header-content-size{
+        width: 83.3%;
+        height: 100%;
+    }
+    .logo-name{
+        margin-right: 4px;
+    }
+    .nav{
+        width: 47%;
+        padding-left: 70px;
+    }
+    .nav-link-size{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .profile{
+        width: 62%;
+        height: 422px;
+        margin-left: 120px;
+        margin-top: 32px;
+    }
+    .scroller-big{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .button-space{
+        margin-bottom: 40px;
+    }
+    .storyText-size{
+        padding-top: 24px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .read-more-size{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .link-img{
+        height: 50px;
+    }
+    .rss{
+        height: 36px;
+    }
+    .story-size{
+        padding-top: 30px;
+        width: 83.3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-story{
+        padding-top: 40px;
+    }
+    .desc-size{
+        width: 63.5%;
+    }
+}
+
+.specialDot{
+    background: #F2785C;
+}
+.rss:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+/*menu on a knee*/
+.sidenav {
+    height: 0px;
+    width: 165px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #F2785C;
+    border-radius: 10px;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: end;
+    line-height: 21px;
+    margin-top: 10px;
+    
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .close-button{ 
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-image: url('./assets/img/Close.svg');
+    background-repeat: no-repeat;
+    background-position: center 0; 
+  }
+  .menu-nav{
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+  }
+  
